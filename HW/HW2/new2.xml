@@ -3,4 +3,7 @@
         <name>Alina</name>
         <age>30</age>
         <salary>10000</salary>
+        <sitcom>Friends</sitcom>
+        <country>Malta</country>
+        <food>Chocolate</food>
     </root>
