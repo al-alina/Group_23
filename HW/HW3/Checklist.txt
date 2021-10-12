@@ -1,3 +1,0 @@
-#	Priority		Functionality to be checked	Status 	   Comment
-	(optional)
-1.	High/Medium/Low		Check...			Pass/Fail			
