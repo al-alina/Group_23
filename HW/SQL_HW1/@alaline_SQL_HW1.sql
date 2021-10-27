@@ -2,7 +2,7 @@
 select * from students;
 
 --2. Вывести всех студентов в таблице.
-select students from students;
+select * from students;
 
 --3. Вывести только Id пользователей.
 select id from students;
@@ -19,7 +19,7 @@ select name, email from students;
 --7. Вывести id, имя, email и дату создания пользователей.
 select id, name, email, created_on from students;
 
--- 8. Вывести пользователей где password 12333.
+--8. Вывести пользователей где password 12333.
 select * from students where password = '12333';
 
 --9. Вывести пользователей которые были созданы 2021-03-26 00:00:00
@@ -31,7 +31,7 @@ select * from students where name like '%Анна%';
 --11. Вывести пользователей где в имени в конце есть 8.
 select * from students where name like '%8';
 
--- 12. Вывести пользователей где в имени в есть буква а.
+--12. Вывести пользователей где в имени в есть буква а.
 select * from students where name like '%a%' or name like '%а%';
 
 --13. Вывести пользователей которые были созданы 2021-07-12 00:00:00.
@@ -73,10 +73,10 @@ select * from students where id > 80 and id < 90;
 --25. Вывести пользователя у которых id между 80 и 90.
 select * from students where id between 80 and 90;
 
--- 26.Вывести пользователей где password равен 12333, 1m313, 123313.
+--26.Вывести пользователей где password равен 12333, 1m313, 123313.
 select * from students where password in ('12333', '1m313', '123313');
 
--- 27. Вывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00.
+--27. Вывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00.
 select * from students where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00');
 
 --28. Вывести минимальный id.
@@ -86,7 +86,7 @@ select min (id) from students;
 select max (id) from students;
 
 --30. Вывести количество пользователей.
-select count (students) from students;
+select count (id) from students;
 
 --31. Вывести id пользователя, имя, дату создания пользователя. Отсортировать по порядку возрастания даты добавления пользоватлеля.
 select id, name, created_on from students order by created_on asc;
